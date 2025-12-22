@@ -257,7 +257,7 @@ Para activar una red
 sudo virsh net-start default
 ```
 
-![img10](img/instKVM/inst-img10.png)
+![img11](img/instKVM/inst-img11.png)
 
 Para hacer que auto-inicie
 
@@ -265,7 +265,7 @@ Para hacer que auto-inicie
 sudo virsh net-autostart default
 ```
 
-![img10](img/instKVM/inst-img10.png)
+![img12](img/instKVM/inst-img12.png)
 
 Dumpear el .xml de la red default
 
@@ -273,7 +273,7 @@ Dumpear el .xml de la red default
 virsh net-dumpxml default > default.xml
 ```
 
-![img11](img/instKVM/inst-img11.png)
+![img13](img/instKVM/inst-img13.png)
 
 Podemos basarnos en este archivo para modificarlo y generar nuevas redes NAT. Vamos a setear el firewall, es el siguiente archivo:
 
@@ -332,7 +332,7 @@ Esto es para los que quieran que salga en bridge la maquina virtual. Para ello p
 sudo nmcli device status
 ```
 
-![img12](img/instKVM/inst-img12.png)
+![img14](img/instKVM/inst-img14.png)
 
 Usando nmcli vamos a crear una interfaz para el bridge
 
@@ -340,7 +340,7 @@ Usando nmcli vamos a crear una interfaz para el bridge
 sudo nmcli connection add type bridge con-name bridge0 ifname bridge0
 ```
 
-![img12](img/instKVM/inst-img12.png)
+![img15](img/instKVM/inst-img15.png)
 
 Conectamos la interfaz ethernet (`enp102s0`)  a la nueva interfaz bridge
 
@@ -348,7 +348,7 @@ Conectamos la interfaz ethernet (`enp102s0`)  a la nueva interfaz bridge
 sudo nmcli connection add type ethernet slave-type bridge con-name 'Bridge connection 1' ifname enp2s0 master bridge0
 ```
 
-![img13](img/instKVM/inst-img13.png)
+![img16](img/instKVM/inst-img16.png)
 
 Ativamos la nueva interfaz, le habilitamos el autoconect (que se auto inicie) & listamos las interfaces.
 
@@ -359,7 +359,7 @@ sudo nmcli connection up bridge0
 sudo nmcli device status
 ```
 
-![img14](img/instKVM/inst-img14.png)
+![img17](img/instKVM/inst-img17.png)
 
 ##### Habilitar en virsh (Virtual Machine Manager) la interfaz bridge
 
@@ -373,8 +373,8 @@ Una vez hemos creado la interfaz, vamos a *setearla* en Virtual Machine Manager.
 </network>
 ```
 
-![img15](img/instKVM/inst-img15.png)
+![img18](img/instKVM/inst-img18.png)
 
 Añadimos la red en virsh `net-define`, le habilitamos el autostart y ya esta.
 
-![img16](img/instKVM/inst-img16.png)
+![img19](img/instKVM/inst-img19.png)
