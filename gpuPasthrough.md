@@ -1,4 +1,4 @@
-## GPU Passthrough
+# GPU Passthrough
 
 Una vez instalado Windows 11 y configurado, ahora tenemos que hacer el passthrough de la gráfica, para ello primero debemos de verificar que se encuentre en el mismo grupo de IOMMU (Tus dispositivos PCI se dividen en grupos, denominados grupos IOMMU. Tu GPU se encuentra en uno o varios de estos grupos, y debe pasar a la máquina virtual la totalidad del grupo que contiene su GPU.). Por lo que ejecutaremos el siguiente script dentro de nuestra terminal para revisar que nuestra gráfica se encuentre con su audio dentro del mismo grupo IOMMU
 
@@ -146,7 +146,7 @@ sudo chown $(whoami):$(whoami) patched.rom
 ```
 
 
-### Scripts
+## Scripts
 
 Una vez parcheada la rom, vamos a “hijackear” la gpu de linux y pasarsela en caliente a windows, por lo que para ello utilizaremos hooks (Creamos el directorio para el:).
 
