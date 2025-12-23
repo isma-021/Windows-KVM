@@ -1,9 +1,9 @@
-## REQUISITOS
+# REQUISITOS
 
 - Drivers para juegos instalados (drivers propietarios de nvidia o amd)
 - sistema actualizado
 
-## Instalación de KVM
+# Instalación de KVM
 
 Primero instalaremos KVM/QEMU, donde este será la base para alojar nuestras máquinas virtuales. Esta tecnología nos permite convertir nuestro sistema operativo (arch btw, aunq sirve cualquier linux) en un hipervisor de tipo 1, consiguiendo algo como Proxmox o VMware ESXi.
 La principal ventaja de este enfoque es que, a diferencia de VMware Workstation o VirtualBox (hipervisores de tipo 2), no se virtualiza el hardware por encima del sistema operativo anfitrión. En su lugar, la virtualización se realiza de manera más directa y cercana al hardware, lo que se traduce en un rendimiento superior, menor latencia y una gestión más eficiente de los recursos del sistema.
