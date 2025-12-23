@@ -1,4 +1,4 @@
-### CPU PINING
+# CPU PINING
 
 Una vez finalizada la configuración de **GPU Passthrough**, el siguiente paso es implementar **CPU Pinning**. Para comprender su utilidad, es importante analizar primero el contexto actual **sin CPU Pinning**.
 
