@@ -1,3 +1,5 @@
+# Configurando la maquina virtual de Windows 11
+
 Para crear la maquina virtual de Windows 11 en este caso es sencillo, simplemente debemos abrir `Virtual Machine Manager`. Una vez abierto entramos en File>Edit > Preferences 
 
 ![img1](img/configVM/conig-img1.png)
