@@ -1,4 +1,4 @@
-## Instalación de Windows 11
+# Instalación de Windows 11
 
 Una vez hemos acabado la configuración de windows 11, simplemente debemos hacer la gran tarea de hacer click a `Siguiente` varias veces, esto hasta llegar al apartado del disco.
 
