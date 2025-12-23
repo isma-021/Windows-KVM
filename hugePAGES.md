@@ -1,4 +1,4 @@
-## HUGE PAGES
+# HUGE PAGES
 
 Ahora solo queda la paginación de la RAM. Podemos hacer paginación de RAM estatica, pero en este caso la haremos dinamica, ya que si lo hacemos estatica la RAM estará reservada desde el inicio de ARCH por lo que con solo 16gb de RAM, no es una opción viable.
 
